@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "analyses",
+  "info": {
+    "singularName": "analysis",
+    "pluralName": "analyses",
+    "displayName": "Analysis",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PER": {
+      "type": "decimal"
+    },
+    "trend": {
+      "type": "enumeration",
+      "enum": [
+        "rising",
+        "stable",
+        "declining"
+      ]
+    },
+    "dividendYield": {
+      "type": "decimal"
+    },
+    "aristocrat": {
+      "type": "boolean",
+      "default": false
+    },
+    "rate": {
+      "type": "integer",
+      "max": 10,
+      "min": 0
+    },
+    "asset": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::asset.asset",
+      "inversedBy": "analyses"
+    }
+  }
+}

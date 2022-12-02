@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assets",
+  "info": {
+    "singularName": "asset",
+    "pluralName": "assets",
+    "displayName": "Asset",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "sector": {
+      "type": "enumeration",
+      "enum": [
+        "Industry",
+        "Finance",
+        "Tech",
+        "Health",
+        "Luxury",
+        "Goods",
+        "Automotive"
+      ],
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "market": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::market.market",
+      "inversedBy": "assets"
+    },
+    "analyses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::analysis.analysis",
+      "mappedBy": "asset"
+    }
+  }
+}

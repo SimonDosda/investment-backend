@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "markets",
+  "info": {
+    "singularName": "market",
+    "pluralName": "markets",
+    "displayName": "Market",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "USA",
+        "France",
+        "Germany"
+      ],
+      "required": true
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "USD",
+        "EUR"
+      ],
+      "required": true
+    },
+    "assets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::asset.asset",
+      "mappedBy": "market"
+    }
+  }
+}
