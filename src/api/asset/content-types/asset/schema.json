@@ -45,6 +45,12 @@
       "relation": "oneToMany",
       "target": "api::analysis.analysis",
       "mappedBy": "asset"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "asset"
     }
   }
 }
