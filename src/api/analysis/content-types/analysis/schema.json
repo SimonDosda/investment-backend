@@ -40,6 +40,11 @@
       "relation": "manyToOne",
       "target": "api::asset.asset",
       "inversedBy": "analyses"
+    },
+    "value": {
+      "type": "decimal",
+      "min": 0,
+      "required": true
     }
   }
 }

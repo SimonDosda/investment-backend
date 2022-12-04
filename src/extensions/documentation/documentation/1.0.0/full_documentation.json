@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-12-03T13:17:46.525Z"
+    "x-generation-date": "2022-12-04T16:50:07.334Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -94,7 +94,9 @@
         ],
         "properties": {
           "data": {
-            "required": [],
+            "required": [
+              "value"
+            ],
             "type": "object",
             "properties": {
               "PER": {
@@ -129,6 +131,10 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "value": {
+                "type": "number",
+                "format": "float"
               }
             }
           }
@@ -597,6 +603,10 @@
                                             }
                                           }
                                         },
+                                        "value": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -784,6 +794,10 @@
                     }
                   }
                 }
+              },
+              "value": {
+                "type": "number",
+                "format": "float"
               },
               "createdAt": {
                 "type": "string",
@@ -1294,6 +1308,10 @@
                                             }
                                           }
                                         },
+                                        "value": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -1481,6 +1499,10 @@
                     }
                   }
                 }
+              },
+              "value": {
+                "type": "number",
+                "format": "float"
               },
               "createdAt": {
                 "type": "string",
@@ -2024,6 +2046,10 @@
                                             }
                                           }
                                         },
+                                        "value": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -2211,6 +2237,10 @@
                     }
                   }
                 }
+              },
+              "value": {
+                "type": "number",
+                "format": "float"
               },
               "createdAt": {
                 "type": "string",
@@ -2721,6 +2751,10 @@
                                             }
                                           }
                                         },
+                                        "value": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -2908,6 +2942,10 @@
                     }
                   }
                 }
+              },
+              "value": {
+                "type": "number",
+                "format": "float"
               },
               "createdAt": {
                 "type": "string",
@@ -3198,6 +3236,10 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "value": {
+                                                        "type": "number",
+                                                        "format": "float"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -3931,6 +3973,10 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "value": {
+                                                        "type": "number",
+                                                        "format": "float"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -4698,6 +4744,10 @@
                                                           }
                                                         }
                                                       },
+                                                      "value": {
+                                                        "type": "number",
+                                                        "format": "float"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -5430,6 +5480,10 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "value": {
+                                                        "type": "number",
+                                                        "format": "float"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -6526,6 +6580,10 @@
                                               }
                                             }
                                           },
+                                          "value": {
+                                            "type": "number",
+                                            "format": "float"
+                                          },
                                           "createdAt": {
                                             "type": "string",
                                             "format": "date-time"
@@ -7221,6 +7279,10 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "value": {
+                                            "type": "number",
+                                            "format": "float"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -7951,6 +8013,10 @@
                                               }
                                             }
                                           },
+                                          "value": {
+                                            "type": "number",
+                                            "format": "float"
+                                          },
                                           "createdAt": {
                                             "type": "string",
                                             "format": "date-time"
@@ -8646,6 +8712,10 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "value": {
+                                            "type": "number",
+                                            "format": "float"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -9383,6 +9453,10 @@
                                             }
                                           }
                                         },
+                                        "value": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -10068,6 +10142,10 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "value": {
+                                          "type": "number",
+                                          "format": "float"
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -10788,6 +10866,10 @@
                                             }
                                           }
                                         },
+                                        "value": {
+                                          "type": "number",
+                                          "format": "float"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -11473,6 +11555,10 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "value": {
+                                          "type": "number",
+                                          "format": "float"
                                         },
                                         "createdAt": {
                                           "type": "string",
